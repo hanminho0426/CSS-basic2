@@ -151,3 +151,52 @@ div는 블럭요소이기 때문에 width와 height의 기본값이 auto이다.
 
 - padding 속성의 특징은?
   - 요소의 크기가 늘어남
+
+## border: 요소의 테두리 선을 지정하는 단축 속성 선-두께 선-종류 선-색상; border-width,style,color
+
+```html
+<div class="container">
+  <div class="item"></div>
+  <div class="item"></div>
+</div>
+```
+
+```css
+.container .item {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+.container .item:first-child {
+  border: 10px solid orange;
+}
+```
+
+### border-width: 요소 테두리 선의 두께
+
+- medium: 중간두께
+- thin: 얇은 두께
+- thick: 두꺼운 두께
+- 단위: px, em, % 등 단위로 지정
+- border-width: 상, 우, 하, 좌
+- border-width: 상하, 좌우
+- border-width: 상, 좌우, 하
+- border-width: 상, 우, 하, 좌
+
+### border-style: 요소 테두리 선의 종류
+
+- none: 선없음/기본 \*
+- solid: 실선(일반 선) \*
+- dotted: 점선
+- dashed: 파선 \*
+- doudle: 두줄 선
+- groove: 홈이 파여있는 모양
+- ridge: 솟은 모양(groove 반대)
+- inset: 요소 전체가 들어간 모양
+- outset: 요소 전체가 나온 모양
+
+### border-color: 요소 테두리 선의 색상을 지정하는 단축 속성
+
+- black: 검정색/기본
+- 색상: 선의색상
+- transparent: 투명
